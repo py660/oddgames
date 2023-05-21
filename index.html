@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSTFVW0C2B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BSTFVW0C2B');
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta name="theme-color" content="var(--bgColor)">
@@ -295,9 +304,9 @@
         box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
     }
 
-.link {
-    cursor: pointer;
-}
+    .link {
+        cursor: pointer;
+    }
 
     .badge2p{
         position: absolute;
@@ -613,7 +622,7 @@
                             <b class="modal-text">pastagames.netlify.app</b></p>
                         <p><button class="btnreset" onclick="window.location='https:/' + '/oddgames.vercel.app';">OPEN</button>
                             <b class="modal-text">oddgames.vercel.app</b></p>
-                        <p><button class="btnreset" x-onclick="window.location='https:/' + '/odd-games.onrender.com';">DISABlED</button>
+                        <p><button class="btnreset" x-onclick="window.location='https:/' + '/odd-games.onrender.com';">DISABLED</button>
                             <b class="modal-text">odd-games.onrender.com (DISABLED)</b></p>
                         <!--p><button class="btnreset" onclick="window.location='https:/' + '/github.play.cluster.ws';">OPEN</button>
                             <b class="modal-text">github.play.cluster.ws</b> (backup)</p-->
@@ -660,6 +669,7 @@
             <div id="links" class="animated fadeInLeft delay-1s games">
                 <div class="game_title"><input placeholder="Search" id="search" class="search" onkeyup="search_it()" type="search"><select id="tags" class="button" onclick="search_it()"><option value="all">All Games</option><option value="pop">Popular</option><option value="two">Two Player</option><option value="stream">Streaming (Broken)</option><option value="bad">Bad Games</option></select></div>
                 <h2 class="animated jello game_title">All games:</h2>
+                <a id="Nation States" class="link" onclick="cloak('/play/nationstates/')" target="_blank"><span class="bar"></span><img src="/icons/germany.png"><b>NationStates</b><span class="badge"><i class="fa-solid fa-star"></i> NEW</span></b></span></a>
                 <a id="House of Hazards" class="link" onclick="cloak('/play/house-of-hazards/');" target="_blank"><span class="bar"></span><img src="/icons/houseofhazards.webp"><b>House of Hazards</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
                 <a id="GBA Emulator" class="link" onclick="cloak('https:/'+'/gba.cluster.ws/', true);" target="_blank"><span class="bar"></span><img src="/icons/GBA.jpg"><b>GBA Emulator</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
                 <a id="Feature Request Form" class="link" onclick="window.location = 'https:/' + '/forms.gle/4QKo9wdgGTmHpS85A';" target="_blank"><span class="bar"></span><img src="/icons/forms.jpeg"><b>Game Request</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
@@ -828,6 +838,8 @@
                 <a id="Zombs Royale" class="link" onclick="cloak('/play/zombs-royale/');" target="_blank"><span class="bar"></span><img src="/icons/zombs-royale.webp"><b>Zombs Royale</b></a>
                 <a id="Yoshifabrication" class="link" onclick="cloak('/play/yoshifabrication/');" target="_blank"><span class="bar"></span><img src="/icons/yoshifabrication.webp"><b>Yoshifabrication</b></a>
                 <a id="Zoro" class="link stream" onclick="cloak('/play/zoro/');" target="_blank"><span class="bar"></span><img src="/icons/zoro.webp"><b>Zoro.to</b><span class="badge"><i class="fa-solid fa-file-video"></i> STREAMING</span></a>
+
+                <p>Thanks, OddPVP, for the CSS and some (most) of the offline game data. Repository restored from lizzyben/poopygamesbeta, a fork of OddPVP/oddgames.</p>
             </div>
             <style>
 
