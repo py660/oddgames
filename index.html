@@ -599,7 +599,7 @@
                 <span class="navbar-item" onclick="window.location = 'https:/' + '/interstellar.hop.sh';">Proxies</span>
                 <span class="navbar-item" id="openSettings">Alternate URLs</span>
                 <span class="navbar-item" onclick="toggleCloak();" id="toggleCloak">Enable Tab Cloak</span>
-                <span class="navbar-item" onclick="alert('Release Notes:\n\n - Updated Minecraft\n - Added Tab Cloaking\n - Fixed bugs\n - Added Proxies\n - Added GBA Emulator')">Pasta Games v3.2.5</span>
+                <span class="navbar-item" onclick="alert('Release Notes:\n\n - Updated Minecraft\n - Added Tab Cloaking\n - Fixed bugs\n - Added Proxies\n - Added GBA Emulator\n - Added Google Snake\n - Added NationStates')">Pasta Games v3.2.6</span>
                 <script x-alias-name="cloak-button-display">
                     if (getCookie('cloak')){
                         document.getElementById('toggleCloak').innerHTML = 'Disable Tab Cloak';
@@ -669,6 +669,7 @@
             <div id="links" class="animated fadeInLeft delay-1s games">
                 <div class="game_title"><input placeholder="Search" id="search" class="search" onkeyup="search_it()" type="search"><select id="tags" class="button" onclick="search_it()"><option value="all">All Games</option><option value="pop">Popular</option><option value="two">Two Player</option><option value="stream">Streaming (Broken)</option><option value="bad">Bad Games</option></select></div>
                 <h2 class="animated jello game_title">All games:</h2>
+                <a id="Google Snake" class="link" onclick="cloak('/play/google-snake/')" target="_blank"><span class="bar"></span><img src="/icons/google-snake.png"><b>Google Snake</b><span class="badge"><i class="fa-solid fa-star"></i> NEW</span></b></span></a>
                 <a id="Nation States" class="link" onclick="cloak('/play/nationstates/')" target="_blank"><span class="bar"></span><img src="/icons/germany.png"><b>NationStates</b><span class="badge"><i class="fa-solid fa-star"></i> NEW</span></b></span></a>
                 <a id="House of Hazards" class="link" onclick="cloak('/play/house-of-hazards/');" target="_blank"><span class="bar"></span><img src="/icons/houseofhazards.webp"><b>House of Hazards</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
                 <a id="GBA Emulator" class="link" onclick="cloak('https:/'+'/gba.cluster.ws/', true);" target="_blank"><span class="bar"></span><img src="/icons/GBA.jpg"><b>GBA Emulator</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
